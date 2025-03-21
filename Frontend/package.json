@@ -2,17 +2,16 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider PORT=3001 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "@ljharb/tsconfig": "^0.3.2",
     "axios": "^1.8.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.30.0",
-    "react-scripts": "^5.0.1"
+    "react-router-dom": "^6.30.0"
   },
   "browserslist": {
     "production": [
@@ -35,5 +34,9 @@
     "rules": {
       "react/react-in-jsx-scope": "off"
     }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.2.2"
   }
 }
